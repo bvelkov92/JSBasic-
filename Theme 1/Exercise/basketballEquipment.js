@@ -12,6 +12,22 @@ let ball = trackSuit/4;
 let accessories = ball/5
 console.log(yearTaxPerTraining+shoes+trackSuit+ball+accessories);
 };
+basketballEquipment(365);
+basketballEquipment(550);
+
+/* ================Second solution======================*/
+function basketballEquipment(yearTaxPerTraining){
+
+let shoes = calculate(yearTaxPerTraining,40);
+let trackSuit = calculate(shoes,20);
+let ball = trackSuit/4;
+let accessories = ball/5
+console.log(yearTaxPerTraining+shoes+trackSuit+ball+accessories);
+};
+
+function calculate (value, percent){
+   return value-(value*percent/100)
+};
 
 basketballEquipment(365);
 basketballEquipment(550);
